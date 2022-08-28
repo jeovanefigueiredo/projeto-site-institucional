@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Tomato.Town</title>
+</head>
+<body>
+    Quantos hectares tem seu plantio de tomate?
+    <p>
+
+    </p>
+    <input id='input_hectar_tomate'><br>
+    <p>
+
+    </p>
+
+    <button onclick='calcular_desperdicio()'>
+    Calcular Desperdício
+    </button>
+    <div id='resultado_desperdicio'></div>
+</body>
+</html>
+
+<script>
+    function calcular_desperdicio() {
+        var  qtd_hectares = Number(input_hectar_tomate.value)
+
+        var gasto_total = (14000 * 03) * qtd_hectares
+
+            resultado_desperdicio.innerHTML = `
+            Seu desperdício diminui em R$ ${gasto_total} com Tomato Town!!!
+            `
+
+
+    }
+
+
+</script>
